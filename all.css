@@ -1,0 +1,267 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+img {
+  vertical-align: top;
+}
+a {
+  text-decoration: none;
+}
+body {
+  line-height: 1.2;
+  font-family: "微軟正黑體";
+}
+.wrap {
+  width: 980px;
+  margin: 0 auto;
+}
+.goTop {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  color: rgba(0, 204, 153, 0.8);
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  padding: 5px;
+  background: #f6f6f6;
+}
+.navbar > li {
+  padding: 0 5px;
+}
+.navbar > li:first-child {
+  border-right: 1px solid #ccc;
+}
+.navbar .fb > a {
+  color: #4460a0;
+}
+.navbar .twitter > a {
+  color: #00aaec;
+}
+.navbar a img {
+  padding-right: 3px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+.logo {
+  background: url("https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/logo.png");
+  width: 224px;
+  height: 50px;
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.menu {
+  display: flex;
+  align-items: center;
+   
+}
+.menu > li > a {
+  color: #00cc99;
+  display: block;
+  vertical-align: middle;
+  margin: 0 10px;
+  padding: 10px 10px;
+  transition: 0.3s all;
+  position: relative;
+  
+}
+.menu > li > a:hover,
+.active {
+  border-bottom: 3px solid #00cc99;  
+  
+}
+.dropdownOpen {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  z-index: 99;
+}
+.dropdownOpen a {
+  color: #555;
+  display: block;
+  padding: 10px 20px 10px 20px;
+  t
+  
+}
+.dropdownOpen a:hover {
+  color: #fff;
+  background-color: #00cc99; 
+  
+}
+
+.swiper {
+  width: 1000px;
+  height: 346px;
+}
+.banner {
+  width: 1000px;
+  height: 346px;
+  position: relative;
+  margin-bottom: 20px;
+}
+.word {
+  width: 1000px;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 50px;
+  position: absolute;
+  top: 90px;
+}
+.word h2 {
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 1.2;
+}
+.course {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.course_detail {
+  padding: 20px;
+  width: 270px;
+  box-shadow: 0 2px 2px #888888;
+}
+.course_detail img {
+  height: 100px;
+  margin-bottom: 30px;
+}
+.course_detail h2 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.intro{
+  display: flex;
+  justify-content: space-between;
+  margin: 60px 0;
+}
+.intro > li {
+  width: 310px;
+  border: 1px solid #ccc;
+  padding: 15px;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: stretch;
+  transition: 0.3s;
+}
+.intro > li:hover {
+  transform: scale(1.1);
+  box-shadow: 2px 2px 6px 0px rgba(0,0,0,.3);
+}
+.intro .card img {
+  margin: auto;
+}
+.intro .card h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px;
+}
+.intro .card p {
+  width: 100%;
+}
+.intro .card ol {
+  list-style-type: disc;
+  text-align: left;
+  width: 80%;
+}
+.course {
+  width: 840px;
+  margin: 0 auto 60px auto;
+  display:inline;
+}
+.course h2 {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  
+}
+.course table {
+  width: 840px;
+  margin: 30px auto;
+}
+.course table tr:first-child {
+  background: #f7f7f7;
+}
+.course table tr:hover {
+  background-color: #f7f7f7;
+}
+.course table tr td {
+  width: 25%;
+  text-alight: left;
+  padding: 10px;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+.data {
+  background: linear-gradient(45deg, #00cc99, #004466);
+  padding: 30px;
+  color: #fff;
+}
+.data h2 {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 20px;
+}
+.data .dataForm {
+  display: flex;
+  justify-content: space-around;
+}
+.data .dataForm .dataFormTextarea {
+  border-radius: 3px;
+  border: 1px solid #fff;
+  width: 45%;
+}
+.data .dataForm .dataFormInfo {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+}
+.data .dataForm .dataFormInfo input {
+  margin: 5px 0 10px 0;
+  padding: 5px;
+  border-radius: 3px;
+  border: 0;
+}
+.data .dataForm .dataFormInfo button {
+  width: 80px;
+  padding: 5px;
+  background: #00cc99;
+  border-radius: 3px;
+  border: 0;
+  color: #fff;
+  align-self: flex-end;
+  cursor: pointer;
+}
+.data .dataForm .dataFormInfo button:hover {
+  background: #fff;
+  color: #00cc99;
+}
+.font-green {
+  color: #00a67d;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+}
+.footer a {
+  color: #d73061;
+}
+.footer a:hover {
+  text-decoration: underline;
+}
